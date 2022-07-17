@@ -1,0 +1,130 @@
+/* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 140px;
+    height: 80px;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: lightgray;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 52px;
+    width: 52px;
+    left: 8px;
+    bottom: 14px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: rgb(88, 88, 88);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(88, 88, 88);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(70px);
+    -ms-transform: translateX(70px);
+    transform: translateX(70px);
+}
+  
+/* Rounded slider */
+.slider.round {
+    border-radius: 50px;
+}
+  
+/* Make slider curved */
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#background{
+    height: 100%;
+    width: 100%;
+
+    background-color: white;
+}
+
+#switch{
+    position: absolute;
+}
+
+#switch:hover{
+    cursor: pointer;
+}
+
+#center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 25%;
+    width: 100%;
+}
+
+#total{
+    font-size: 7rem;
+    margin: 0px;
+    text-align: center;
+
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+}
+
+#btn{
+    position: absolute;
+    top: 15rem;
+    transform: translate(0%, -50%);
+
+    text-align: center;
+
+    width: 100%;
+}
+
+button{
+    margin: 1rem;
+    height: 5rem;
+    width: 12rem;
+
+    background-color: white;
+    color: black;
+    font-size: 2.5rem;
+    border: 1px solid black;
+}
+
+#add:hover{
+    cursor: pointer;
+}
+
+#subtract:hover{
+    cursor: pointer;
+}
+
+#reset:hover{
+    cursor: pointer;
+}
