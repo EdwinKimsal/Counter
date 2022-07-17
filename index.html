@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Head -->
+
+<head>
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Body -->
+
+    <body id="background">
+
+        <label class="switch">
+            <input id="mode" type="checkbox" onchange="change()">
+            <span class="slider round"></span>
+        </label>
+
+        <main id="center">
+            <p id="total"></p>
+
+            <section id="btn">
+                <button class='b' id="add" type="button" onclick="add()">Add</button>
+                <button class='b' id="reset" type="button" onclick="reset()">Reset</button>
+                <button class='b' id="subtract" type="button" onclick="subtract()">Subtract</button>
+            </section>
+
+        </main>
+    </body>
+
+    <script src="code.js"></script>
+
+</html>
